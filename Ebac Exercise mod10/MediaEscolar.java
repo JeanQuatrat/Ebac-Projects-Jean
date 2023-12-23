@@ -20,11 +20,10 @@ public class MediaEscolar {
         
      if (NotaMedia >= 7) {
             System.out.println("Voce esta aprovado.");
-        }else if (NotaMedia > 5 && NotaMedia < 6) {
+        }if (NotaMedia >= 5) {
             System.out.println("Voce esta em recuperacao");
-
-        } else {
+        } if (NotaMedia < 5) {
                 System.out.println("Voce esta reprovado.");
+        }
        }
     }
-}
